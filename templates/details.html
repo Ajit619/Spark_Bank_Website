@@ -1,0 +1,64 @@
+{% extends 'homepage.html' %}
+{% block body %}
+<script>
+    function changeBackground() {
+            //change color every frame
+            //initialise colors ( hue, lightness)
+            var hue = 360;
+            var light = 0;
+        
+            function changeHue (){
+                    var col1 = Math.abs((hue % 720) - 360);
+                    var col2 = Math.abs( ( (hue+90) % 720) - 360);
+                    hue++ ;
+            
+            //values for light adjustment not used
+                    var light1 = Math.abs( (light % 40) - 20)+60; 
+                    var light2 = Math.abs( ( (light+10) % 40) - 20)+60;
+                    light++ ;
+            
+            document.body.style.background = 'linear-gradient(to right, hsl('+col1 +',70%, 75%) 0%,hsl('+col2 +',90%,75%) 100%)';
+        }
+        setInterval	(changeHue, 64);
+    }
+    changeBackground();
+</script>
+<link rel="stylesheet" href="{{ url_for('static', filename='details.css') }}">
+    {{store[0]}}
+    <div class="cont">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Name</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"  value="{{store.name}}"readonly> 
+          </div>
+          
+          <div class="input-group mb-3">
+            <span class="input-group-text">Total Transfer</span>
+            <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" value="{{store.transfers}}" readonly>
+          </div>
+          
+          
+          <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" value="{{store.Money}}" readonly>
+          </div>
+          
+          <div class="input-group mb-3">
+            <span class="input-group-text">Bank</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" value="{{store.Bank}}" readonly>
+          </div>
+          <div class="input-group mb-3">
+              <span class="input-group-text">Email</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" value="{{store.name}}" readonly>
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Server" aria-label="Server" value="{{store.server}}" readonly>
+          </div>
+          
+    </div>
+    <a href="/" style="all: unset;">
+      <div class="backbutton" style="padding-top: 4px; width: 20px; margin-left: auto; margin-right: auto">
+              <div title="Main page" class="backArrow" style=" margin-top: 8px;">
+                  &#10140;
+              </div>
+      </div>
+      </a>
+    {% endblock  %}

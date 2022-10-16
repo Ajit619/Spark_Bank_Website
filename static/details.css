@@ -1,0 +1,40 @@
+.cont{
+    border: 2px solid aquamarine;
+    width:500px;
+    margin:auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: aliceblue;
+    border-style: outset;
+}
+.backArrow {
+    font-size: 25px;
+    line-height: 25px;
+
+    width: 1.5em;
+    height: 1.5em;
+    padding: 5px;
+
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    transform: rotate(180deg);
+
+    color:#ee7752;
+    border: 2px solid grey;
+    border-radius: 50%;
+
+    -webkit-touch-callout: none;
+     -khtml-user-select: none;
+}
+.backArrow:hover {
+    background: moccasin;
+}
+.backArrow:active {
+    position: relative;
+    right: 2px;
+}

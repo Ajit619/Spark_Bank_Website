@@ -1,0 +1,392 @@
+body{
+  /* background-color:dimgrey !important; */
+  background: linear-gradient(45deg, #000000, #507e94ba) !important;
+}
+#bankingsystem{
+  font-family: cursive;
+}
+.small{
+  height: 50px;
+  margin-top: 250px;
+  border-radius: 20px;
+}
+.flexb{
+    display:flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: center;
+    background-image: url('./333.jpg');
+    
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    /* opacity: 0.8; */
+    border-radius: 25px;
+    /* position: relative; */
+    flex-wrap: wrap;
+}
+  html{
+      background-image: url('static/homepageimage.jpg') !important;
+      border-radius: 10px;
+      background-repeat: no-repeat;
+  }
+  #image{
+      width: 800px;
+      height: 800px;
+      margin-left: 50%;
+      margin-right: 60%;
+      }
+  .two{
+      border-radius: 10px;
+      margin: 0px 10px 0px 10px;
+    }
+
+  .two:hover {
+    animation: pop 0.1s ease-in-out;
+    background-color:lightgrey;
+    animation-delay: 1s;
+  }
+  
+  @keyframes pop {
+    50%  {
+      transform: scale(1.25);
+    }
+  }
+
+  .icon {
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    
+    margin: 25px 0 25px 25px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+    font-family: sans-serif;
+  }
+  
+  .icon:nth-child(1) { background: cornflowerblue; }
+  .icon:nth-child(2) { background: salmon; }
+  .icon:nth-child(3) { background: gray; }
+  
+  /**
+   * The "shine" element
+   */
+  
+  .icon:after {
+    
+    animation: shine 5s ease-in-out  infinite;
+    animation-fill-mode: forwards;  
+    content: "";
+    position: absolute;
+    top: -110%;
+    left: -210%;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+    
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right, 
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+  }
+  
+  /* Hover state - trigger effect */
+  
+  
+  /* Active state */
+  
+  .icon:active:after {
+    opacity: 0;
+  }
+  
+  @keyframes shine{
+    10% {
+      opacity: 1;
+      top: -30%;
+      left: -30%;
+      transition-property: left, top, opacity;
+      transition-duration: 0.7s, 0.7s, 0.15s;
+      transition-timing-function: ease;
+    }
+    100% {
+      opacity: 0;
+      top: -30%;
+      left: -30%;
+      transition-property: left, top, opacity;
+    }
+  }
+  
+  .button1 {
+    text-decoration: none;
+    background-color: rgb(20, 72, 168);
+    color: #FFFFFF;
+    padding: 10px 30px;
+    margin: 5px;
+    font-size: 15px;
+    font-family: Arial;  
+    border-radius: 25px;
+    transition: 0.5s;  
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .button1:hover {
+    transition: 0.3s;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(88, 137, 230);
+    padding: 12px 45px;
+  }
+
+/* B2 */
+
+  .button2 {
+    text-decoration: none;
+    background-color: rgb(255, 142, 36);
+    color: #FFFFFF;
+    padding: 10px 30px;
+    margin: 5px;
+    font-size: 15px;
+    font-family: Arial;  
+    border-radius: 25px;
+    transition: 0.5s;  
+  }
+  
+  .button2:hover {
+    transition: 0.3s;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(252, 174, 101, 0.877);
+    padding: 12px 45px;
+  }
+
+/* B3 */
+
+  .button3 {
+    text-decoration: none;
+    background-color: lightgreen;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    margin: 5px;
+    font-size: 15px;
+    font-family: Arial;  
+    border-radius: 25px;
+    transition: 0.5s;  
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .button3:hover {
+    transition: 0.3s;
+    color: black;
+    font-weight: bold;
+    background-color: lightgray;
+    padding: 12px 45px;
+  }
+
+/* B4 */
+
+.button4 {
+    text-decoration: none;
+    background-color: rgb(146, 21, 177);
+    color: #FFFFFF;
+    padding: 10px 30px;
+    margin: 5px;
+    font-size: 15px;
+    font-family: Arial;  
+    border-radius: 25px;
+    transition: 0.5s;  
+  }
+  
+  .button4:hover {
+    transition: 0.3s;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(213, 101, 241, 0.801);
+    padding: 12px 45px;
+  }
+
+  /* B5 */
+
+.button5 {
+    text-decoration: none;
+    background-color: rgb(255, 0, 0);
+    color: #FFFFFF;
+    padding: 10px 30px;
+    margin: 5px;
+    font-size: 15px;
+    font-family: Arial;  
+    border-radius: 25px;
+    transition: 0.5s;  
+  }
+  
+  .button5:hover {
+    transition: 0.3s;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(243, 111, 111);
+    padding: 12px 45px;
+  } 
+  
+  /* B6 */
+
+  .button6 {
+    text-decoration: none;
+    background-color: rgb(212, 33, 132);
+    color: #FFFFFF;
+    padding: 10px 30px;
+    margin: 5px;
+    font-size: 15px;
+    font-family: Arial;  
+    border-radius: 25px;
+    transition: 0.5s;  
+  }
+  
+  .button6:hover {
+    transition: 0.3s;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(233, 176, 207);
+    padding: 12px 45px;
+  }    
+  .carousel-inner{
+   display: flex;
+   justify-content: center;
+   border-radius: 25px;
+   align-items: center;
+   padding:10px 0px 10px 0px;
+   height: 690px;
+  }
+  .carousel-item{
+    border: 2px solid #48685d00;
+    width:700px; margin-left:auto; margin-right:auto;
+    padding:10px 10px 10px 10px;
+    border-radius: 7px;
+    background-color: #48685d00;
+    margin-top: 20px;
+    /* border-radius: 15px; */
+  }
+  #bankingsystem {
+    color: blue;
+    font: bold  'Fjalla One', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: .2s;
+  }
+  #bankingsystem:hover {
+    color: hotPink;
+  }
+  @media (-webkit-min-device-pixel-ratio:0) {
+    #bankingsystem {
+      background-color: skyBlue;
+      background-image: -webkit-linear-gradient(left, deepskyblue 0%, orange 50%, transparent 50%);
+      background-position: 100% 0;
+      background-size: 200% 200%;
+      color: maroon;
+      -webkit-transition: .1s .2s;
+      -webkit-background-clip: text;
+    }
+    #bankingsystem:hover {
+      background-position: 0 0;
+      color: transparent;
+      transition: .4s 0;
+    }
+  }
+  
+  .Social-media{
+    display: flex;
+    justify-content: center;
+  }
+  a{
+    display: flex;
+    background: #e3edf7;
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: transform 0.5s
+  }
+  a i{
+    font-size: 50px;
+    color:#777;
+    transition: transform 0.5s;
+  }
+  a:hover{
+    box-shadow:inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                      -0.5px -0.5px 0px -1px rgba(255,255,255,1),
+                      0.5px 0.5px 0px rgba(0,0,0,0.15),
+                      0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255, 0, 0, 0.1);
+    transform: translateY(2px);
+  }
+  a:hover i{
+    transform: scale(0.90);
+  }
+  a:hover .fa-facebook{
+    color: #3b5998;
+  }
+  a:hover .fa-github{
+    color: black;
+  }
+  a:hover .fa-linkedin{
+    color: blue;
+  }
+ 
+.e{
+  margin-bottom: 20px;
+}
+
+.content {
+  min-height: 100%;
+}
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.footer {
+  height: 50px;
+  margin-top: -50px;
+  background: linear-gradient(45deg, #c0c0c0, #505a62d1);
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 100px;
+  padding: 25px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  border: 4px solid black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+

@@ -1,0 +1,45 @@
+.carousel-inner {
+    /* background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.6));
+    background-color: #FFFA02;
+    animation: rgb 30s infinite alternate;
+    height: 100%;
+    width: 100%; */
+    /* background-image: url(./2222.jpg);  background-position: center; */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+
+  }
+  
+  /* @keyframes rgb {
+    10% {
+      background-color: #FF6B02;
+    }
+    20% {
+      background-color: #FF0602;
+    }
+    30% {
+      background-color: #FF0289;
+    }
+    40% {
+      background-color: #BF02FF;
+    }
+    50% {
+      background-color: #022CFF;
+    }
+    60% {
+      background-color: #02BFFF;
+    }
+    70% {
+      background-color: #02FFBB;
+    }
+    80% {
+      background-color: #02FF28;
+    }
+    90% {
+      background-color: #63FF02;
+    }
+    100% {
+      background-color: #C8FF02;
+    }
+  } */
+  

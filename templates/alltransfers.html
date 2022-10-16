@@ -1,0 +1,86 @@
+{% extends 'homepage.html' %}
+{% block body %}
+
+    <link rel="stylesheet" href=" {{ url_for('static', filename='alltransfers.css') }}">
+    <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <div class="container2">
+
+        <div class="extrafortaskdescr" style="margin-top: 100px;">
+            <form action='/customers' methods="POST">
+                <div class="members">
+                    <div class="row" style="display:flex;margin-top:60px; justify-content: center;">
+                        <div class="col">
+                            <div class="mb-2 assig">
+                                <input type="text" class="form-control" id="mem" placeholder="name" readonly>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <select name='sender' class="form-select assig" aria-label="Default select example">
+                                <!-- <option selected>Person1</option> -->
+                                {% for i in store %}
+                                <option value="{{i.id}}">{{i['name']}}</option>
+                                {% endfor %}
+
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="display:flex;margin-top:80px; justify-content: center;">
+                    <div class="col">
+                        <div class="mb-3 assig">
+                            <input type="text" class="form-control" id="val" placeholder="Transferto" readonly>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <select name="receiver" class="form-select assig" aria-label="Default select example">
+                            <!-- <option selected>Person1</option> -->
+                            {% for i in store %}
+                            <option value="{{i.id}}">{{i['name']}}</option>
+                            {% endfor %}
+
+                        </select>
+                    </div>
+                </div>
+                <div class="row" style=" display:flex;margin-top:30px; justify-content: center;">
+                    <div class="col">
+                        <div class="mb-3 assig">
+                            <input type="text" class="form-control" id="val" placeholder="Rupees" readonly>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-2 mt-2">
+                            <span class="input-group-text">$</span>
+                            <span class="input-group-text">0.00</span>
+                            <input type="number" name="rupetext" class="form-control"
+                                aria-label="Dollar amount (with dot and two decimal places)">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="createbutton">
+                    <div class="vale">
+                       <button type="submit" formmethod="POST"
+                            class="btn btn-outline-success btn-light ">Transfer</button>
+
+                    </div>
+                    <a href="/" style="all: unset;">
+                    <div class="backbutton" style="padding-top: 4px;">
+                            <div title="Main page" class="backArrow" style=" margin-top: 8px;">
+                                &#10140;
+                            </div>
+                    </div>
+                    </a>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+{% endblock %}
